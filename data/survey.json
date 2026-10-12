@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "created": "2026-09-21",
+    "respondents": 25,
+    "age_range": "17-23",
+    "population": "college students",
+    "note": "Values copied from Appendix A. '~' values in the appendix are stored as plain numbers (~0 -> 0)."
+  },
+  "familiarity": {
+    "question": "Before hearing about this case, were you familiar with D4VD's music?",
+    "answers": {
+      "listened_often": 6.25,
+      "knew_some_songs": 81.3,
+      "knew_of_him_not_listened": 0,
+      "no": 12.5
+    },
+    "labels": {
+      "listened_often": "Yes, I listened often",
+      "knew_some_songs": "Yes, I knew some songs",
+      "knew_of_him_not_listened": "I knew of him but did not listen",
+      "no": "No"
+    }
+  },
+  "separate_possible": {
+    "question": "Do you think it is possible to separate an artist's work from the artist's personal actions?",
+    "answers": {
+      "yes": 31.3,
+      "sometimes": 68.8,
+      "no": 0
+    },
+    "labels": {
+      "yes": "Yes",
+      "sometimes": "Sometimes",
+      "no": "No"
+    }
+  },
+  "accused_not_convicted": {
+    "question": "If an artist is accused of a serious violent crime but has not been convicted, should listeners stop supporting their music?",
+    "answers": {
+      "stop_immediately": 6.25,
+      "pause_temporarily": 62.5,
+      "wait_for_court": 18.8,
+      "never_stop": 12.5
+    },
+    "labels": {
+      "stop_immediately": "Yes, immediately",
+      "pause_temporarily": "Yes, but only temporarily until more facts are known",
+      "wait_for_court": "No, people should wait for a court decision",
+      "never_stop": "No, never"
+    }
+  },
+  "convicted_continue": {
+    "question": "If an artist is convicted of murder, would you continue to listen to their music?",
+    "answers": {
+      "stop_immediately": 25,
+      "wait_for_evidence": 18.8,
+      "wait_for_trial": 0,
+      "continue_not_proof": 12.5,
+      "depends_on_seriousness": 43.8
+    },
+    "labels": {
+      "stop_immediately": "Stop supporting the artist immediately",
+      "wait_for_evidence": "Wait for more evidence before deciding",
+      "wait_for_trial": "Wait for the result of the trial",
+      "continue_not_proof": "Continue listening because allegations are not proof",
+      "depends_on_seriousness": "It depends on the seriousness of the allegation"
+    }
+  },
+  "meaning_change": {
+    "question": "Do you think an artist's alleged or proven actions can change the meaning of their songs?",
+    "answers": {
+      "yes_completely": 43.8,
+      "yes_somewhat": 50,
+      "no_separate": 6.25,
+      "depends": 6.25
+    },
+    "labels": {
+      "yes_completely": "Yes, completely",
+      "yes_somewhat": "Yes, somewhat",
+      "no_separate": "No, the music stays separate from the artist",
+      "depends": "It depends on the song and the situation"
+    }
+  },
+  "main_factor": {
+    "question": "Which factor would most affect your decision to keep supporting an artist accused of serious wrongdoing?",
+    "answers": {
+      "seriousness": 50,
+      "evidence": 12.5,
+      "conviction": 0,
+      "connection": 25,
+      "profit": 12.5
+    },
+    "labels": {
+      "seriousness": "The seriousness of the allegation",
+      "evidence": "Whether there is strong evidence",
+      "conviction": "Whether the artist is convicted in court",
+      "connection": "My personal connection to the artist's music",
+      "profit": "Whether the artist profits from my support"
+    }
+  },
+  "fan_responsibility": {
+    "question": "Do you think fans have a responsibility to consider the ethical behavior of artists they support?",
+    "answers": {
+      "yes_definitely": 50,
+      "yes_serious_cases": 37.5,
+      "no_separate": 6.25,
+      "no_not_responsible": 6.25
+    },
+    "labels": {
+      "yes_definitely": "Yes, definitely",
+      "yes_serious_cases": "Yes, but only in very serious cases",
+      "no_separate": "No, art and personal behavior should stay separate",
+      "no_not_responsible": "No, fans are not responsible for an artist's actions"
+    }
+  }
+}

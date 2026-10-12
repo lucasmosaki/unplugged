@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1, "artist": "Taylor Switch", "tests": "baseline",
+        "seriousness": 2, "evidence": 1, "profit": "high",
+        "connection": "You play her songs everyday",
+        "headline": "Anonymous posts accuse Taylor Switch of plagiarism",
+        "twist": null
+    },
+    {
+        "id": 2, "artist": "Jungcook", "tests": "wait for the court",
+        "seriousness": 5, "evidence": 4, "profit": "high",
+        "connection": "You know her from the local music scene",
+        "headline": "Jungcook is charged for arson, trial is pending.",
+        "twist": {"text": "Jungcook is found innocent after the trial", "evidence": 5}
+    }
+]
