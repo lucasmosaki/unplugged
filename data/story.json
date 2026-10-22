@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "title": "UNPLUGGED",
+    "subtitle": "Forensic mystery ",
+    "disclaimer": "Inspired around d4vd's case, based on Essay #3",
+    "default_name": "user"
+  },
+  "intro": [
+    { "text": "* Somewhere in the city, a song is still playing on repeat.", "voice": "narrator" },
+    { "text": "* But the artist who made it has not been seen since the news broke.", "voice": "narrator" },
+    { "text": "* The internet has already reached a verdict.", "voice": "narrator", "color": "red" },
+    { "text": "* You haven't. That's your job.", "voice": "narrator" },
+    { "text": "* Terminal access granted. Case 0411-27 is yours, {name}.", "voice": "system" },
+    { "text": "* Type <y>help</> for commands. Type <y>list</> to see the files.", "voice": "system" },
+    { "text": "* You're filled with <r>DETERMINATION</>.", "voice": "narrator" }
+  ],
+  "suspects": {
+    "n0va": {
+      "name": "N. Vance (n0va)",
+      "role": "Recording artist",
+      "aliases": ["nova", "noah", "vance", "artist"],
+      "bio": "The name the internet shouted first. Was in the studio that night."
+    },
+    "rex": {
+      "name": "R. Hale",
+      "role": "Manager, Halewood Management",
+      "aliases": ["hale", "manager"],
+      "bio": "Controls the contracts, the lease and the paperwork."
+    },
+    "tessa": {
+      "name": "T. Rowe",
+      "role": "Studio assistant",
+      "aliases": ["rowe", "assistant"],
+      "bio": "Last person to leave the studio. Works night shifts at a hospital."
+    }
+  },
+  "tiers": {
+    "1": "FIELD FILES",
+    "2": "INTERNAL RECORDS",
+    "3": "SURVEILLANCE ARCHIVE"
+  },
+  "objectives": [
+    { "id": "O1", "text": "Find out who drove the car", "done_when": "D1" },
+    { "id": "O2", "text": "Check n0va's alibi", "done_when": "D2" },
+    { "id": "O3", "text": "Verify Tessa's whereabouts", "done_when": "D3" },
+    { "id": "O4", "text": "Name the person responsible", "done_when": "D4" }
+  ],
+  "deductions": [
+    {
+      "id": "D1", "suspect": "rex", "evidence": "EVID-005", "verdict": "solved", "points": 20, "unlock_tier": 2,
+      "text": "* KEY-B belongs to the management valet set. Its only authorised user is R. Hale. He signed it out at 22:55. Whoever drove that car was holding Rex's key."
+    },
+    {
+      "id": "D2", "suspect": "n0va", "evidence": "EVID-007", "verdict": "solved", "points": 20, "unlock_tier": 3,
+      "text": "* n0va badged into Studio A at 19:02 and did not badge out until 03:02. The car moved at 02:09. He was behind a locked door. The man the internet convicted has an alibi."
+    },
+    {
+      "id": "D3", "suspect": "tessa", "evidence": "EVID-008", "verdict": "solved", "points": 15,
+      "text": "* The hospital time clock puts Tessa on shift from 22:52 to 07:10. And her last message from Mara was a warning about Rex."
+    },
+    {
+      "id": "D4", "suspect": "rex", "evidence": "EVID-009", "verdict": "solved", "final": true, "points": 40, "requires": ["D1", "D2", "D3"],
+      "blocked_text": "* The footage looks damning. But a good analyst rules people OUT before ruling one IN. You still have an open suspect.",
+      "text": "* The HALEWOOD jacket. The key fob. The face match at the garage exit. While n0va sat at a mixing desk, R. Hale drove the car away."
+    },
+    {
+      "id": "S1", "suspect": "rex", "evidence": "EVID-006", "verdict": "support", "points": 10,
+      "text": "* 'Stay where you are. Don't talk to anyone.' Motive and intent, in his own voice. It builds the case but doesn't close it."
+    },
+    {
+      "id": "S2", "suspect": "rex", "evidence": "EVID-003", "verdict": "support", "points": 5,
+      "text": "* The contract change that erased Mara's credit runs through Rex. That's a motive. It's not proof."
+    },
+    {
+      "id": "S3", "suspect": "rex", "evidence": "EVID-010", "verdict": "support", "points": 10,
+      "text": "* A lawyer, a prepaid phone, a ride from the garage area at 02:58. Suspicious. But none of it places him at the car."
+    },
+    {
+      "id": "H1", "suspect": "n0va", "evidence": "EVID-003", "verdict": "weak",
+      "text": "* They argued. That's motive at best. An argument is not a crime, and the chat says nothing about who drove the car."
+    },
+    {
+      "id": "H2", "suspect": "n0va", "evidence": "EVID-004", "verdict": "weak",
+      "text": "* Millions of posts. Zero evidence. Popularity is not proof, and a trending hashtag is not a witness."
+    },
+    {
+      "id": "H3", "suspect": "n0va", "evidence": "EVID-002", "verdict": "hint",
+      "text": "* The telemetry says KEY-B moved the car. n0va's key is KEY-A. This file doesn't point at him. Find out who holds KEY-B."
+    },
+    {
+      "id": "H4", "suspect": "n0va", "evidence": "EVID-005", "verdict": "hint",
+      "text": "* KEY-A is n0va's. But KEY-B is the key that drove the car. Look at who signed THAT one out."
+    },
+    {
+      "id": "H5", "suspect": "rex", "evidence": "EVID-002", "verdict": "hint",
+      "text": "* KEY-B drove the car, yes. But the telemetry doesn't say whose key it is. You need a registry."
+    },
+    {
+      "id": "H6", "suspect": "tessa", "evidence": "EVID-003", "verdict": "hint",
+      "text": "* She left the chat at 22:30. A chat doesn't tell you where she went. Is there a statement from her?"
+    },
+    {
+      "id": "H7", "suspect": "tessa", "evidence": "EVID-007", "verdict": "weak",
+      "text": "* The door audit shows her leaving at 22:30. It doesn't show where she went next."
+    }
+  ],
+  "hints": [
+    {
+      "until": "D1", "needs": "EVID-005",
+      "text_needs": "* Think. The telemetry says KEY-B moved the car. Who holds that key? Try <y>search KEY-B</>.",
+      "text": "* You have the key registry. Who signed out KEY-B? Try <y>submit rex 5</>."
+    },
+    {
+      "until": "D2", "needs": "EVID-007",
+      "text_needs": "* Where was n0va that night? The studio logs who walks through its doors. Try <y>search badge</>.",
+      "text": "* The door audit shows where n0va was. Does it clear him? Try <y>submit n0va 7</>."
+    },
+    {
+      "until": "D3",
+      "text": "* Tessa left at 22:30. Her interview may say where she went. <y>examine 8</>, then <y>submit tessa 8</>."
+    },
+    {
+      "until": "D4", "needs": "EVID-009",
+      "text_needs": "* One timestamp keeps showing up in the telemetry: 02:09. Try <y>search 02:09</>.",
+      "text": "* The camera index places someone at the car. Try <y>submit rex 9</>."
+    }
+  ],
+  "ranks": [
+    { "min": 0, "title": "TRAINEE" },
+    { "min": 60, "title": "JUNIOR ANALYST" },
+    { "min": 100, "title": "SENIOR ANALYST" },
+    { "min": 130, "title": "CHIEF INVESTIGATOR" }
+  ],
+  "help": [
+    ["list / evidence", "Show the files you can open"],
+    ["examine <id>", "Read a file, e.g. examine 3"],
+    ["search <word>", "Search every file (also: grep). Hits can unlock hidden files"],
+    ["submit <who> <id>", "Make a deduction, e.g. submit rex 5"],
+    ["suspects", "Show the people of interest"],
+    ["survey [n|all]", "Field survey: what college students think"],
+    ["status", "Objectives, clearance and score"],
+    ["hint", "Stuck? Ask for a nudge"],
+    ["speed <mode>", "normal, fast or instant text"],
+    ["quit", "Save and exit"]
+  ],
+  "epilogue": [
+    { "text": "* CASE CLOSED. The evidence points to <y>R. Hale</>.", "voice": "narrator", "color": "green" },
+    { "text": "* KEY-B. The voicemail. The footage. The paper trail.", "voice": "narrator" },
+    { "text": "* n0va was cleared by a door log. But the internet convicted him in 25 hours.", "voice": "narrator" },
+    { "text": "* That got us thinking about the real world...", "voice": "narrator" }
+  ],
+  "epilogue_survey": [
+    { "text": "* We asked college students, ages 17 to 23, how they handle this.", "voice": "system" },
+    { "text": "* <y>{s:6:1}</> said the SERIOUSNESS of an allegation matters most. Only <y>{s:6:2}</> said strong evidence. And <y>{s:6:3}</> said a court verdict.", "voice": "system" },
+    { "text": "* <y>{s:3:2}</> would stop supporting an accused artist, but only until more facts are known.", "voice": "system" },
+    { "text": "* <y>{s:5:1}</> said an artist's actions can change the meaning of their songs completely.", "voice": "system" },
+    { "text": "* <y>{s:7:1}</> said fans definitely have a responsibility to consider an artist's ethics.", "voice": "system" },
+    { "text": "* The song stays the same. The way we hear it might not.", "voice": "narrator" },
+    { "text": "* Evidence first. Opinion second. That's the whole job.", "voice": "narrator" },
+    { "text": "* <r>THE END.</>", "voice": "narrator" }
+  ],
+  "messages": {
+    "unknown_command": "* '{cmd}' isn't a command. {suggestion}Type <y>help</> to see what you can do.",
+    "usage_examine": "* Usage: <y>examine <id></>  (example: <y>examine 3</>)",
+    "usage_search": "* Usage: <y>search <keyword></>  (example: <y>search KEY-B</>)",
+    "usage_submit": "* Usage: <y>submit <suspect> <evidence_id></>  (example: <y>submit rex 5</>)",
+    "no_such_evidence": "* There is no file called '{id}'. Type <y>list</> to see the file IDs.",
+    "locked_evidence": "* {id} is locked behind <r>{reason}</>. Keep digging.",
+    "search_none": "* No matches for '{kw}' in any file you can open.",
+    "search_short": "* Give me at least two characters to search for.",
+    "search_header": "SEARCH RESULTS FOR '{kw}'",
+    "search_decrypted": "* A match cracked open a hidden file: <y>{id}</>!",
+    "search_restricted": "* {n} more match(es) sit inside files you can't open yet: <r>{ids}</>",
+    "unknown_suspect": "* Who is '{name}'? Suspects on file: {names}.",
+    "already_logged": "* You already logged that deduction.",
+    "wrong_default": "* {suspect} barely shows up in that file. That's a guess, not a deduction.",
+    "goodbye": "* Stay determined, {name}. The case file is saved.",
+    "speed_set": "* Text speed set to {mode}.",
+    "speed_bad": "* Usage: <y>speed normal</>, <y>speed fast</> or <y>speed instant</>.",
+    "first_review": "First review of {id}",
+    "survey_bad": "* There's no survey question '{n}'. Try <y>survey</> to see them all.",
+    "list_footer": "* Files marked <y>NEW</> haven't been read yet. Try <y>examine <id></>.",
+    "clearance_up": "CLEARANCE {roman} GRANTED: {name}",
+    "title_prompt": "(Press ENTER)",
+    "name_prompt": "* Name the analyst. (Max 12 letters.)",
+    "name_ok": "* {name}. Good. Let's get to work.",
+    "survey_intro": "FIELD SURVEY: college students aged 17-23 (Appendix A)",
+    "survey_footer": "* Type <y>survey <n></> to see one question, or <y>survey all</>.",
+    "no_hint_left": "* The case file is complete. Nothing left to chase."
+  }
+}

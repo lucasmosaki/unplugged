@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "title": "Appendix A: Survey",
+    "created_by": "Lucas Malfatti Osaki",
+    "created_on": "2026-09-21",
+    "respondents": "College students aged 17-23",
+    "note": "Source values marked with ~ (about 6.25% and about 0%) are stored as 6.25 and 0."
+  },
+  "questions": [
+    {"id": "Q1", "text": "Before hearing about this case, were you familiar with d4vd's music?",
+     "options": [
+       {"label": "Yes, I listened often", "pct": 6.25},
+       {"label": "Yes, I knew some songs", "pct": 81.3},
+       {"label": "I knew of him but did not listen", "pct": 0},
+       {"label": "No", "pct": 12.5}]},
+    {"id": "Q2", "text": "Do you think it is possible to separate an artist's work from the artist's personal actions?",
+     "options": [
+       {"label": "Yes", "pct": 31.3},
+       {"label": "Sometimes", "pct": 68.8},
+       {"label": "No", "pct": 0}]},
+    {"id": "Q3", "text": "If an artist is accused of a serious violent crime but has not been convicted, should listeners stop supporting their music?",
+     "options": [
+       {"label": "Yes, immediately", "pct": 6.25},
+       {"label": "Yes, but only temporarily until more facts are known", "pct": 62.5},
+       {"label": "No, people should wait for a court decision", "pct": 18.8},
+       {"label": "No, never", "pct": 12.5}]},
+    {"id": "Q4", "text": "If an artist is convicted of murder, would you continue to listen to their music?",
+     "options": [
+       {"label": "Stop supporting the artist immediately", "pct": 25},
+       {"label": "Wait for more evidence before deciding", "pct": 18.8},
+       {"label": "Wait for the result of the trial", "pct": 0},
+       {"label": "Continue listening because allegations are not proof", "pct": 12.5},
+       {"label": "It depends on the seriousness of the allegation", "pct": 43.8}]},
+    {"id": "Q5", "text": "Do you think an artist's alleged or proven actions can change the meaning of their songs?",
+     "options": [
+       {"label": "Yes, completely", "pct": 43.8},
+       {"label": "Yes, somewhat", "pct": 50},
+       {"label": "No, the music stays separate from the artist", "pct": 6.25},
+       {"label": "It depends on the song and the situation", "pct": 6.25}]},
+    {"id": "Q6", "text": "Which factor would most affect your decision to keep supporting an artist accused of serious wrongdoing?",
+     "options": [
+       {"label": "The seriousness of the allegation", "pct": 50},
+       {"label": "Whether there is strong evidence", "pct": 12.5},
+       {"label": "Whether the artist is convicted in court", "pct": 0},
+       {"label": "My personal connection to the artist's music", "pct": 25},
+       {"label": "Whether the artist profits from my support", "pct": 12.5}]},
+    {"id": "Q7", "text": "Do you think fans have a responsibility to consider the ethical behavior of artists they support?",
+     "options": [
+       {"label": "Yes, definitely", "pct": 50},
+       {"label": "Yes, but only in very serious cases", "pct": 37.5},
+       {"label": "No, art and personal behavior should stay separate", "pct": 6.25},
+       {"label": "No, fans are not responsible for an artist's actions", "pct": 6.25}]}
+  ],
+  "field_notes": [
+    "{s:1:2} of respondents knew some of the artist's songs before the case.",
+    "Only {s:6:3} said a court verdict would be the deciding factor.",
+    "{s:3:2} would pause support temporarily until more facts are known."
+  ]
+}

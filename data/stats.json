@@ -1,0 +1,48 @@
+{
+  "default_profile": {
+    "name": "user",
+    "clearance": 1,
+    "score": 0,
+    "mistakes": 0,
+    "searches": 0,
+    "unlocked": [
+      "EVID-001",
+      "EVID-002",
+      "EVID-003",
+      "EVID-004"
+    ],
+    "examined": [],
+    "completed": [],
+    "supports": [],
+    "solved": false
+  },
+  "current_profile": {
+    "name": "JOANA",
+    "clearance": 2,
+    "score": 35,
+    "mistakes": 1,
+    "searches": 2,
+    "unlocked": [
+      "EVID-001",
+      "EVID-002",
+      "EVID-003",
+      "EVID-004",
+      "EVID-005",
+      "EVID-006",
+      "EVID-008"
+    ],
+    "examined": [
+      "EVID-001",
+      "EVID-002",
+      "EVID-003",
+      "EVID-004",
+      "EVID-005",
+      "EVID-006"
+    ],
+    "completed": [
+      "D1"
+    ],
+    "supports": [],
+    "solved": false
+  }
+}
