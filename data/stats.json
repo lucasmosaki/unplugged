@@ -1,0 +1,52 @@
+{
+  "default_profile": {
+    "name": "user",
+    "clearance": 1,
+    "score": 0,
+    "mistakes": 0,
+    "searches": 0,
+    "unlocked": [
+      "EVID-001",
+      "EVID-002",
+      "EVID-003",
+      "EVID-004"
+    ],
+    "examined": [],
+    "completed": [],
+    "supports": [],
+    "solved": false
+  },
+  "current_profile": {
+    "name": "USER",
+    "clearance": 3,
+    "score": 104,
+    "mistakes": 0,
+    "searches": 3,
+    "unlocked": [
+      "EVID-001",
+      "EVID-002",
+      "EVID-003",
+      "EVID-004",
+      "EVID-005",
+      "EVID-006",
+      "EVID-007",
+      "EVID-008"
+    ],
+    "examined": [
+      "EVID-001",
+      "EVID-002",
+      "EVID-003",
+      "EVID-004",
+      "EVID-005",
+      "EVID-006",
+      "EVID-007"
+    ],
+    "completed": [
+      "D1",
+      "D2",
+      "D3"
+    ],
+    "supports": [],
+    "solved": true
+  }
+}

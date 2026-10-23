@@ -1,0 +1,371 @@
+{
+  "speaker_voices": {
+    "MARA": "mara",
+    "N0VA": "nova",
+    "REX": "rex"
+  },
+  "evidence": [
+    {
+      "id": "EVID-001",
+      "title": "Incident Report #0411-27",
+      "media_type": "text report",
+      "format": "text",
+      "tier": 1,
+      "unlock": {
+        "mode": "start"
+      },
+      "source": "City Police Dept.",
+      "recorded": "2026-04-11 06:48",
+      "tags": [
+        "report",
+        "vehicle",
+        "garage"
+      ],
+      "content": {
+        "paragraphs": [
+          "At 06:48 on April 11, a garage attendant at Summit Ridge reported an electric sedan left on Level P3 for hours, doors locked.",
+          "Inside was Mara Ellis, 26, a vocalist who had worked with recording artist n0va. Cause of death is under investigation.",
+          "The sedan is leased by Halewood Management, which represents n0va. Two digital keys exist: KEY-A and KEY-B. Studio A is a badge-controlled facility, and door audits are available.",
+          "At 09:15, n0va's name began spreading online. Police had named no suspect."
+        ]
+      },
+      "analyst_note": "Two keys. One car. Somebody drove it from the studio to this garage."
+    },
+    {
+      "id": "EVID-002",
+      "title": "Vehicle Telemetry Export",
+      "media_type": "spreadsheet log",
+      "format": "table",
+      "tier": 1,
+      "unlock": {
+        "mode": "start"
+      },
+      "source": "Manufacturer telematics",
+      "recorded": "2026-04-10 / 04-11",
+      "tags": [
+        "telemetry",
+        "vehicle",
+        "keys"
+      ],
+      "content": {
+        "columns": [
+          "TIME",
+          "EVENT",
+          "KEY",
+          "LOCATION"
+        ],
+        "rows": [
+          [
+            "18:58",
+            "Ignition OFF",
+            "KEY-A",
+            "Studio lot"
+          ],
+          [
+            "01:52",
+            "Driver door unlock",
+            "KEY-B",
+            "Studio lot"
+          ],
+          [
+            "02:09",
+            "Ignition ON",
+            "KEY-B",
+            "Studio lot"
+          ],
+          [
+            "02:41",
+            "Ignition OFF",
+            "KEY-B",
+            "Summit Ridge P3"
+          ]
+        ]
+      },
+      "analyst_note": "The car was driven at 02:09. The last key used was KEY-B. Not KEY-A."
+    },
+    {
+      "id": "EVID-003",
+      "title": "STUDIO CREW Group Chat",
+      "media_type": "chat transcript",
+      "format": "transcript",
+      "tier": 1,
+      "unlock": {
+        "mode": "start"
+      },
+      "source": "Phone backup (Mara Ellis)",
+      "recorded": "2026-04-10 21:50 - 22:30",
+      "tags": [
+        "chat",
+        "contract",
+        "argument"
+      ],
+      "content": {
+        "lines": [
+          {
+            "t": "21:53",
+            "who": "N0VA",
+            "text": "I didn't leak the demo. I swear."
+          },
+          {
+            "t": "22:03",
+            "who": "MARA",
+            "text": "Rex told me the credits are changing. My name is off the track."
+          },
+          {
+            "t": "22:05",
+            "who": "N0VA",
+            "text": "Rex handles that stuff. I didn't sign anything."
+          },
+          {
+            "t": "22:11",
+            "who": "MARA",
+            "text": "Then why is it in the contract draft?"
+          },
+          {
+            "t": "22:20",
+            "who": "MARA",
+            "text": "I'm sitting in the car. Need some air."
+          }
+        ]
+      },
+      "analyst_note": "An argument is not an alibi problem, and it is not a crime. Who controls the contract?"
+    },
+    {
+      "id": "EVID-004",
+      "title": "Public Reaction Timeline",
+      "media_type": "spreadsheet log",
+      "format": "table",
+      "tier": 1,
+      "unlock": {
+        "mode": "start"
+      },
+      "source": "Social media monitoring",
+      "recorded": "2026-04-11 / 04-12",
+      "tags": [
+        "social",
+        "public opinion",
+        "timeline"
+      ],
+      "content": {
+        "columns": [
+          "TIME",
+          "PLATFORM",
+          "POSTS / HR",
+          "EVENT"
+        ],
+        "rows": [
+          [
+            "Apr 11 09:15",
+            "Social",
+            "412",
+            "n0va named by an anonymous account"
+          ],
+          [
+            "Apr 11 11:00",
+            "Social",
+            "18,900",
+            "#JusticeForMara starts trending"
+          ],
+          [
+            "Apr 11 20:00",
+            "Social",
+            "61,200",
+            "Fans split: guilty vs. wait for facts"
+          ],
+          [
+            "Apr 12 10:00",
+            "Police",
+            "n/a",
+            "Statement: no suspect has been identified"
+          ]
+        ]
+      },
+      "analyst_note": "The public verdict arrived about 25 hours before the police statement."
+    },
+    {
+      "id": "EVID-005",
+      "title": "Digital Key Registry",
+      "media_type": "spreadsheet log",
+      "format": "table",
+      "tier": 1,
+      "unlock": {
+        "mode": "search",
+        "keywords": [
+          "KEY-B",
+          "registry"
+        ]
+      },
+      "source": "Halewood Management fleet office",
+      "recorded": "2026-04-10",
+      "tags": [
+        "keys",
+        "registry",
+        "management"
+      ],
+      "content": {
+        "columns": [
+          "KEY",
+          "REGISTERED TO",
+          "ISSUED BY",
+          "LAST SIGN-OUT"
+        ],
+        "rows": [
+          [
+            "KEY-A",
+            "N. Vance (n0va)",
+            "Halewood Mgmt",
+            "Apr 10 18:58"
+          ],
+          [
+            "KEY-B",
+            "Management valet set",
+            "Halewood Mgmt",
+            "Apr 10 22:55, R. Hale"
+          ],
+          [
+            "NOTE",
+            "KEY-B authorised users: R. Hale only",
+            "",
+            ""
+          ]
+        ]
+      },
+      "analyst_note": "Somebody signed KEY-B out at 22:55. The registry says who."
+    },
+    {
+      "id": "EVID-006",
+      "title": "Voicemail to Mara Ellis, 22:41",
+      "media_type": "audio log transcript",
+      "format": "transcript",
+      "tier": 2,
+      "unlock": {
+        "mode": "tier"
+      },
+      "source": "Phone backup (Mara Ellis)",
+      "recorded": "2026-04-10 22:41",
+      "tags": [
+        "voicemail",
+        "audio",
+        "contract"
+      ],
+      "content": {
+        "lines": [
+          {
+            "t": "00:00",
+            "who": "REX",
+            "text": "Mara. It's Rex. We need to talk about the contract. Tonight."
+          },
+          {
+            "t": "00:07",
+            "who": "REX",
+            "text": "I'm coming to the studio. Stay where you are. Don't talk to anyone."
+          }
+        ]
+      },
+      "analyst_note": "Mara never called back. Her next message went to Tessa."
+    },
+    {
+      "id": "EVID-007",
+      "title": "Studio A Door Audit",
+      "media_type": "spreadsheet log",
+      "format": "table",
+      "tier": 2,
+      "unlock": {
+        "mode": "tier"
+      },
+      "source": "Studio security system",
+      "recorded": "2026-04-10 / 04-11",
+      "tags": [
+        "door audit",
+        "studio",
+        "alibi"
+      ],
+      "content": {
+        "columns": [
+          "TIME",
+          "DOOR",
+          "BADGE HOLDER",
+          "EVENT"
+        ],
+        "rows": [
+          [
+            "19:02",
+            "Studio A",
+            "N. Vance",
+            "IN"
+          ],
+          [
+            "22:30 to 03:02",
+            "Studio A",
+            "(anyone)",
+            "No other badge events"
+          ],
+          [
+            "03:02",
+            "Studio A",
+            "N. Vance",
+            "OUT"
+          ]
+        ]
+      },
+      "analyst_note": "Studio A has no side door. Nobody leaves without a badge. Where was n0va at 02:09?"
+    },
+    {
+      "id": "EVID-008",
+      "title": "Studio Lot Camera Index",
+      "media_type": "spreadsheet log",
+      "format": "table",
+      "tier": 3,
+      "unlock": {
+        "mode": "search",
+        "keywords": [
+          "02:09",
+          "footage",
+          "camera"
+        ]
+      },
+      "source": "Studio security cameras",
+      "recorded": "2026-04-11 01:51 - 02:55",
+      "tags": [
+        "cctv",
+        "camera",
+        "footage"
+      ],
+      "content": {
+        "columns": [
+          "TIME",
+          "CAMERA",
+          "OBJECT",
+          "DETAIL"
+        ],
+        "rows": [
+          [
+            "01:51",
+            "CAM-2 Studio lot",
+            "Person",
+            "Man in a jacket marked HALEWOOD walks to the sedan with a key fob"
+          ],
+          [
+            "02:09",
+            "CAM-2 Studio lot",
+            "Sedan",
+            "Sedan leaves. Driver wears the same HALEWOOD jacket"
+          ],
+          [
+            "02:09",
+            "CAM-6 Control room",
+            "Person",
+            "n0va visible inside the studio, at the mixing desk"
+          ],
+          [
+            "02:55",
+            "CAM-9 Garage exit",
+            "Person",
+            "Same man leaves on foot. Face match: R. Hale (94%)"
+          ]
+        ]
+      },
+      "analyst_note": "At 02:09, one man was driving the car and another was at a mixing desk."
+    }
+  ]
+}
